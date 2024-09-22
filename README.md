@@ -1,0 +1,1 @@
+# plugins-wp-404-auto-redirect-to-similar-post
