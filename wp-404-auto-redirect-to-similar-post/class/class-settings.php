@@ -79,6 +79,9 @@ class WP_404_Auto_Redirect_Settings{
         // Esc Fallback
         $settings['fallback']['url'] = esc_url($settings['fallback']['url']);
         
+        // Esc Priority
+        $settings['priority'] = (int) $settings['priority'];
+        
         // Headers
         if(((int)$settings['method'] != 301) && ((int)$settings['method'] != 302)){
             $settings['method'] = 301;

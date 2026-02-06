@@ -64,6 +64,7 @@ trait WP_404_Auto_Redirect_Admin{
     function sanitize_setting($settings){
         
         $settings['fallback']['url'] = sanitize_url($settings['fallback']['url']);
+        $settings['priority'] = (int) $settings['priority'];
         
         return $settings;
         

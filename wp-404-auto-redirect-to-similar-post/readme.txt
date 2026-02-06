@@ -3,9 +3,9 @@ Contributors: hwk-fr
 Donate link: https://hwk.fr/
 Tags: SEO, 404, Redirect, 301, Similar, Related, Search, Broken Link, Webmaster Tools, Google
 Requires at least: 4.0
-Tested up to: 6.5
+Tested up to: 6.8
 Requires PHP: 5.6
-Stable tag: 1.0.5
+Stable tag: 1.0.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -377,6 +377,11 @@ function my_404_after_redirect($query){
 5. Front: Debug Console
 
 == Changelog ==
+
+= 1.0.6 =
+* Fix: Escaping priority value in settings
+* Fix: PHP 8.3 deprecated creation of dynamic property
+* General: Bumped WordPress version to 6.8
 
 = 1.0.5 =
 * Fix: Escaping URL in Debug Console

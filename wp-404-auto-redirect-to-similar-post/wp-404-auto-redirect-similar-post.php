@@ -2,7 +2,7 @@
 /**
  * Plugin Name: WP 404 Auto Redirect to Similar Post
  * Description: Automatically Redirect any 404 page to a Similar Post based on the Title, Post Type & Taxonomy using 301 Redirects!
- * Version: 	1.0.5
+ * Version: 	1.0.6
  * Author: 		hwk-fr
  * Author URI: 	https://hwk.fr
  * Text Domain: wp-404-auto-redirect
@@ -35,6 +35,19 @@ class WP_404_Auto_Redirect{
     Use WP_404_Auto_Redirect_Admin;
     Use WP_404_Auto_Redirect_Ajax;
     Use WP_404_Auto_Redirect_Debug;
+    
+    var $engines;
+    var $groups;
+    var $search;
+    var $settings;
+    
+    
+    /**
+     * construct
+     */
+    function __construct(){
+        // ...
+    }
     
     
     /**
